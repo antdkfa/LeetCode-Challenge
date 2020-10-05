@@ -4,7 +4,7 @@ public:
         if(!N) return 1;
         int ans = 0;
         stack<int> s;
-        while(N != 0){
+        while(N != 0){  
             s.push(N%2);
             N/=2;
         }
