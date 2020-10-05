@@ -18,5 +18,5 @@ public:
     bool wordBreak(string s, vector<string>& wordDict) {
         dfs(s,wordDict,0);
         return ans;
-    }
+    } 
 };
