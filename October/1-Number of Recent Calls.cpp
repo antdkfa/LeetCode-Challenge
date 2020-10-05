@@ -11,7 +11,7 @@ public:
             if(now < t - 3000) q.pop();
             else break;
         }
-        q.push(t);
+        q.push(t); 
         return q.size();
     }
 };
