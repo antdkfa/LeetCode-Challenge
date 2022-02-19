@@ -13,7 +13,7 @@ public:
         return cnt;
     }
     
-    void bfs(string beginWord, vector<string> &wordList) {
+    void bfs(string beginWord, const vector<string> &wordList) {
         queue<int> q;
         visited[0] = 1;
         for(int i=0;i<wordList.size();i++) {
