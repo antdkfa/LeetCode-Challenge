@@ -37,7 +37,7 @@ public:
                 s[idx] = c;
             }
         }
-        
+   
         return s;
     }
 };
