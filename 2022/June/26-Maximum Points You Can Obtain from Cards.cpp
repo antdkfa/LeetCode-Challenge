@@ -11,12 +11,12 @@ public:
         }
         post[n-1] = cardPoints[n-1];
         for(int i=n-2;i>=0;i--) {
-            post[i] = post[i+1]+cardPoints[i];
+            post[i] = post[i+1]+cardPoints[i];           
         }
         
         int ans = max(pre[k-1],post[n-k]);
-        for(int i=0,j=n-k+1;i<n;i++,j--) {
-            if(j<0) break;
+        for(int i=0,j=n-k+1;i<n;i++,j++) {
+            if(j>=n) break;
             ans = max(ans, pre[i] + post[j]);          
         }
         return ans;
