@@ -8,6 +8,7 @@ public:
                 ans += r - l;
             } else {
                 mul /= nums[l++];
+                if(!mul) mul = 1;
             }
             if(r < l) {
                 r = l;
